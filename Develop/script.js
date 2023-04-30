@@ -1,13 +1,16 @@
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(document).ready(function() {
   // Your code that interacts with the DOM goes here
   // For example:
-  $('#myButton').click(function() {
-    $('#myDiv').toggle();
+  var today = dayjs();
+  $('#currentDay').text(today.format('dddd, MMMM, DD'));
+ 
   });
-});
+
+  
 
 
 $(function () {
@@ -30,3 +33,8 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+
+
+
+
