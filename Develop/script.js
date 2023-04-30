@@ -7,7 +7,7 @@ $(document).ready(function() {
   // For example:
   
   var today = dayjs();
-  $('#currentDay').text(today.format('dddd, MMMM, DD'));
+  $('#currentDay').text(today.format('dddd, MMMM DD'));
   
   });
 
