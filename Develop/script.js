@@ -206,7 +206,7 @@ function saveElevenTextArea() {
   // This is the the code that sets the input value of the 11am slot
 
 
-  // This is the the code that sets the input value of the 12am slot
+  // This is the the code that sets the input value of the 12 slot
   let twelveTextAreaValue = document.getElementById("twelve-value");
   let buttonForTwelve = document.querySelector(".btn-for-twelve");
 
@@ -219,16 +219,62 @@ function saveTwelveTextArea() {
     let twelveOclockInput = twelveTextAreaValue.value;
     localStorage.setItem("twelveOclockInput", twelveOclockInput);
   }
+   // This is the the code that sets the input value of the 12 slot
+
+
+
+  // This is the the code that sets the input value of the 1pm slot
+  let thirteenTextAreaValue = document.getElementById("thirteen-value");
+  let buttonForThirteen = document.querySelector(".btn-for-thirteen");
+
+  let thirteenOclockLocalValue = localStorage.getItem("thirteenOclockInput");
+  thirteenTextAreaValue.value = thirteenOclockLocalValue;
+
+  buttonForThirteen.addEventListener("click", saveThirteenTextArea);
+  
+function saveThirteenTextArea() {
+    let thirteenOclockInput = thirteenTextAreaValue.value;
+    localStorage.setItem("thirteenOclockInput", thirteenOclockInput);
+  }
+   // This is the the code that sets the input value of the 1pm slot
+
+
+  // This is the the code that sets the input value of the 2pm slot
+  let fourteenTextAreaValue = document.getElementById("fourteen-value");
+  let buttonForFourteen = document.querySelector(".btn-for-fourteen");
+
+  let fourteenOclockLocalValue = localStorage.getItem("fourteenOclockInput");
+  fourteenTextAreaValue.value = fourteenOclockLocalValue;
+
+  buttonForFourteen.addEventListener("click", saveFourteenTextArea);
+  
+function saveFourteenTextArea() {
+    let fourteenOclockInput = fourteenTextAreaValue.value;
+    localStorage.setItem("fourteenOclockInput", fourteenOclockInput);
+  }
+   // This is the the code that sets the input value of the 2pm slot
+
+
+
+  // This is the the code that sets the input value of the 3pm slot
+  let fifteenTextAreaValue = document.getElementById("fifteen-value");
+  let buttonForFifteen = document.querySelector(".btn-for-fifteen");
+
+  let fifteenOclockLocalValue = localStorage.getItem("fifteenOclockInput");
+  fifteenTextAreaValue.value = fifteenOclockLocalValue;
+
+  buttonForFifteen.addEventListener("click", saveFifteenTextArea);
+  
+function saveFifteenTextArea() {
+    let fifteenOclockInput = fifteenTextAreaValue.value;
+    localStorage.setItem("fifteenOclockInput", fifteenOclockInput);
+  }
+   // This is the the code that sets the input value of the 3pm slot
 
 
 
 
 
-
-
-
-
-    // This is the the code that sets the input value of the 12am slot
 });
 
 
