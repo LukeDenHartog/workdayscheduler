@@ -160,13 +160,15 @@ $(function () {
   let nineTextAreaValue = document.getElementById("nine-value");
   let buttonForNine = document.querySelector(".btn-for-nine");
 
+  let nineOclockLocalValue = localStorage.getItem("nineOclockInput");
+  nineTextAreaValue.value = nineOclockLocalValue;
+
   buttonForNine.addEventListener("click", savenineTextArea);
   
 function savenineTextArea() {
     let nineOclockInput = nineTextAreaValue.value;
     localStorage.setItem("nineOclockInput", nineOclockInput);
   }
- 
   // This is the the code that sets the input value of the 9am slot
 
 
