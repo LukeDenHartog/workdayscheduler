@@ -171,6 +171,34 @@ function savenineTextArea() {
   }
   // This is the the code that sets the input value of the 9am slot
 
+  // This is the the code that sets the input value of the 10am slot
+  let tenTextAreaValue = document.getElementById("ten-value");
+  let buttonForTen = document.querySelector(".btn-for-ten");
+
+  let tenOclockLocalValue = localStorage.getItem("tenOclockInput");
+  tenTextAreaValue.value = tenOclockLocalValue;
+
+  buttonForTen.addEventListener("click", saveTenTextArea);
+  
+function saveTenTextArea() {
+    let tenOclockInput = tenTextAreaValue.value;
+    localStorage.setItem("tenOclockInput", tenOclockInput);
+  }
+  // This is the the code that sets the input value of the 10am slot
+
+  
+  let elevenTextAreaValue = document.getElementById("eleven-value");
+  let buttonForEleven = document.querySelector(".btn-for-eleven");
+
+  let elevenOclockLocalValue = localStorage.getItem("elevenOclockInput");
+  elevenTextAreaValue.value = elevenOclockLocalValue;
+
+  buttonForEleven.addEventListener("click", saveElevenTextArea);
+  
+function saveElevenTextArea() {
+    let elevenOclockInput = elevenTextAreaValue.value;
+    localStorage.setItem("elevenOclockInput", elevenOclockInput);
+  }
 
 
 
