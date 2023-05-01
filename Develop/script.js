@@ -1,15 +1,8 @@
 var currentHour = dayjs().hour()
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-$(document).ready(function() {
-  // Your code that interacts with the DOM goes here
-  // For example:
-  
-  var today = dayjs();
-  $('#currentDay').text(today.format('dddd, MMMM DD'));
-  
-  });
 
 
 $(function () {
@@ -20,6 +13,8 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
+ 
+
   // TODO: Add code to apply the past, present, or future class to each time
   if (currentHour < 9) {
     $('#hour-9').addClass("future");
@@ -146,20 +141,45 @@ $(function () {
     $('#hour-17').removeClass("present");
     $('#hour-17').removeClass("future");
   }
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
+ 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
 
   // TODO: Add code to display the current date in the header of the page.
+  var today = dayjs();
+  $('#currentDay').text(today.format('dddd, MMMM DD'));
+
+
+ 
+  
+ 
+
+// This is the the code that sets the input value of the 9am slot
+  let nineTextAreaValue = document.getElementById("nine-value");
+  let buttonForNine = document.querySelector(".btn-for-nine");
+
+  buttonForNine.addEventListener("click", savenineTextArea);
+  
+function savenineTextArea() {
+    let nineOclockInput = nineTextAreaValue.value;
+    localStorage.setItem("nineOclockInput", nineOclockInput);
+  }
+ 
+  // This is the the code that sets the input value of the 9am slot
+
+
+
+
+
+
+
 });
 
 
 
-
+// var currentHour = dayjs().hour()
+//  let nineTextAreaValue = document.querySelector(".nine-value").value;
+// let buttonForNine = document.querySelector(".btn-for-nine");
 
