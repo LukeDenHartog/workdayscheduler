@@ -272,7 +272,36 @@ function saveFifteenTextArea() {
    // This is the the code that sets the input value of the 3pm slot
 
 
+  // This is the the code that sets the input value of the 4pm slot
+  let sixteenTextAreaValue = document.getElementById("sixteen-value");
+  let buttonForSixteen = document.querySelector(".btn-for-sixteen");
 
+  let sixteenOclockLocalValue = localStorage.getItem("sixteenOclockInput");
+  sixteenTextAreaValue.value = sixteenOclockLocalValue;
+
+  buttonForSixteen.addEventListener("click", saveSixteenTextArea);
+  
+function saveSixteenTextArea() {
+    let sixteenOclockInput = sixteenTextAreaValue.value;
+    localStorage.setItem("sixteenOclockInput", sixteenOclockInput);
+  }
+   // This is the the code that sets the input value of the 4pm slot
+
+
+  // This is the the code that sets the input value of the 5pm slot
+  let seventeenTextAreaValue = document.getElementById("seventeen-value");
+  let buttonForSeventeen = document.querySelector(".btn-for-seventeen");
+
+  let seventeenOclockLocalValue = localStorage.getItem("seventeenOclockInput");
+  seventeenTextAreaValue.value = seventeenOclockLocalValue;
+
+  buttonForSeventeen.addEventListener("click", saveSeventeenTextArea);
+  
+function saveSeventeenTextArea() {
+    let seventeenOclockInput = seventeenTextAreaValue.value;
+    localStorage.setItem("seventeenOclockInput", seventeenOclockInput);
+  }
+   // This is the the code that sets the input value of the 5pm slot
 
 
 });
