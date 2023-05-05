@@ -1,6 +1,6 @@
 # workdayscheduler
 
-![Site screnshot](./assets/workdayscheduler.jpg)
+![Site screnshot](./assets/schedulepicture.jpg)
 
 Link to deployed application: https://afrozez.github.io/workdayscheduler/
 
