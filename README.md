@@ -12,7 +12,7 @@ I got some much needed practice using APIs and have a much better grasp on how t
 
     If anyone would like to work on/add to this project it is recommended to first follow these steps:
 - Download Visual Studio Code: https://code.visualstudio.com/
-- Pull the files frop my GitHub Profile Repository: https://github.com/Afrozez/workdayscheduler
+- Pull the files from my GitHub Profile Repository: https://github.com/Afrozez/workdayscheduler
 - It is recommended to have to latest version of Google Chrome which can be found here: https://www.google.com/chrome/.
 - Get some basic understanding on a couple APIs like: Bootstrap, jQuery, and Day.js.
 
